@@ -348,8 +348,8 @@ function App() {
 
   const incrementtokens = () => {
     let newtokens = tokens + 1;
-    if (newtokens > CONFIG.MAX_PER_TX) {
-      newtokens = CONFIG.MAX_PER_TX;
+    if (newtokens > 20) {
+      newtokens = 20;
     }
     settokens(newtokens);
   };
